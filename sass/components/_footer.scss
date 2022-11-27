@@ -8,16 +8,14 @@
     padding-bottom: 60px;
 
     &__container {
-
         @media screen and (max-width: 1199px) {
             text-align: center;
         }
-       
 
         @media screen and (min-width:1200px) {
             display: flex;
-                align-items: baseline;
-                justify-content: space-between;
+            align-items: baseline;
+            justify-content: space-between;
         }
            
         
@@ -42,6 +40,21 @@
         text-decoration: none;
         font-style: normal;
     }
+
+    &__contiguity {
+        @media (min-width:768px) {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-around;  
+        }
+
+        @media (min-width:1200px) {
+            gap: 70px;
+            justify-content: space-between;
+            
+        }
+    }
+         
 
     &__item:not(:last-child) {
         margin-bottom: 9px;
