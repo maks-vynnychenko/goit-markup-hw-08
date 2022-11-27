@@ -10,12 +10,26 @@
     &__nav {
             display: flex;
             align-items: center;
-            gap: 91px;
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            justify-content: space-between;
+    }
+            @media screen and (min-width: 768px) {
+                gap: 88px;
+            }
+            @media screen and (min-width: 1200px) {
+                gap: 91px;
+            }
         }
     
     &__menu {
-            display: flex;
+            display: none;
             gap: 50px;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
         }
 }
 

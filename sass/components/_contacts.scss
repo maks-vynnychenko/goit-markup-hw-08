@@ -7,6 +7,18 @@
     &__icon {
             margin-right: 10px;
         }
+    @media screen and (max-width:767px) {
+        display: none;
+        
+    }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px){
+       flex-direction: column;
+       gap: 10px;
+       margin-left: auto;
+       align-items: baseline;
+       font-size: 12px;
+       padding: 0;}
     
 }
 

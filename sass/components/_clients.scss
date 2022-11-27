@@ -1,5 +1,8 @@
 .clients__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 
     list-style: none;
 
@@ -8,12 +11,15 @@
 }
 
 .clients__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
+ @media screen and (min-width:768px) {
+    width: 226px;
+ }
+ @media screen and (min-width:1200px) {
+     width: 170px;
+ }
 
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
 }
 
 .clients__link {

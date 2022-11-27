@@ -13,10 +13,21 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
 }
 
 .list {
@@ -30,17 +41,24 @@ img {
 }
 
 section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+   @media screen and (min-width:1200px) {
+    padding: 94px 0;
+   }
 }
 
 .section__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
-
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+          
+    }
 }
